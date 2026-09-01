@@ -55,7 +55,7 @@ def login():
                 result=response.json()
                 
                 session["access_token"]=result["access_token"]
-                session["full_name"]=result["full_name"]
+                session["full_name"]=result["customer_dashboard"]
                 print(result)
         
                 if email.lower()=="aman@gmail.com":
